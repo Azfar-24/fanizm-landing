@@ -90,6 +90,8 @@ body {
 .phone-mockup {
   position: relative;
   margin-top: 24px;
+  max-width: 567px;
+  margin: 0 auto;
 }
 
 .phone-mockup img {
@@ -196,8 +198,7 @@ color: #fcc10f;
 }
 
 .features-header h1 {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .features-header .highlight {
@@ -207,11 +208,28 @@ color: #fcc10f;
 .features-stats {
   font-size: 16px;
   margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 567px;
+    margin-top: 16px;
+  
+}
+.features-item{
+position: relative;
+    width: 33%;
+    font-size: 14px;
+}
+.features-item:not(:last-child){
+  border-right: 1px solid;
 }
 
-.payment-icons img {
-  height: 30px;
-  margin: 0 10px;
+span.star-white {
+  max-width: 15px;
+    display: inline-block;
+}
+span.star-white img{
+  width: 100%;
 }
 
 .features-section {
@@ -477,4 +495,37 @@ color: #fcc10f;
   margin-top: -107px;
   position: relative;
   padding-bottom: 12px;
+}
+
+.group-start {
+  max-width: 94px;
+    margin: 0 auto;
+}
+.group-start img, .star img{
+  width: 100%;
+}
+.star {
+  max-width: 24px;
+}
+.feature-heading-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.widthral-title {
+  font-size: 16px;
+  margin: 10px;
+  display: inline-block;
+}
+.payment-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+
+}
+
+.payment-icons img {
+  width: 20%;
+  object-fit: contain;
 }

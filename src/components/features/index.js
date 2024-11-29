@@ -11,17 +11,45 @@ const Features = () => {
     <div className="features-container">
       {/* Header Section */}
       <div className="features-header">
+        <div className="group-start">
+<img src="images/group-start.png" alt="star"/>
+        </div>
+        <div className="feature-heading-wrap">
+        <div className="star">
+<img src="images/start.png" alt="star"/>
+        </div>
         <h1>
-          ⭐ India’s <span className="highlight">No.1</span> Quizzing App ⭐
+           India’s <span className="highlight">No.1</span> Quizzing App
         </h1>
-        <p className="features-stats">
-          5 Million+ Fans | 4.4 ⭐ Rated App | 100+ Movie Quizzes
-        </p>
+        <div className="star">
+<img src="images/start.png" alt="star"/>
+        </div>
+        </div>
+        <div className="features-stats">
+<div className="features-item">
+<p>5 Million+</p>
+<p>Fans</p>  
+</div>
+<div className="features-item">
+<p>54.4 <span className="star-white">
+<img src="images/white-star.png" alt="star"/>
+        </span> </p>
+<p>Rated App</p>  
+</div>
+
+<div className="features-item">
+<p>100+</p>
+<p>Movie Quizzes</p>  
+</div>
+
+        
+        </div>
+        <div className="widthral-title"><span>Fast withdrawls with</span></div>
         <div className="payment-icons">
-          <img src="/assets/gpay.png" alt="GPay" />
-          <img src="/assets/razorpay.png" alt="Razorpay" />
-          <img src="/assets/phonepe.png" alt="PhonePe" />
-          <img src="/assets/upi.png" alt="UPI" />
+          <img src="images/gpay.png" alt="GPay" />
+          <img src="images/razorpay.png" alt="Razorpay" />
+          <img src="images/phonepe.png" alt="PhonePe" />
+          <img src="images/upi.png" alt="UPI" />
         </div>
       </div>
 
