@@ -45,7 +45,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(to right, #1d1d1d, #2a2a72);
+  background: url(../public/images/hero-bg.jpg) no-repeat center center / cover;
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -64,13 +64,21 @@ body {
 
 /* Tagline */
 .tagline h1 {
-  font-size: 26px;
+  font-size: 16px;
   margin: 10px 0;
+  letter-spacing: 2px;
+  font-weight: 400;
 }
+
 
 .tagline .highlight {
   color: #ff5733;
   font-weight: bold;
+  display: block;
+  font-size: 28px;
+  letter-spacing: initial;
+  font-weight: 700;
+  padding: 2px 0;
 }
 
 .tagline p {
@@ -81,18 +89,38 @@ body {
 /* Phone Mockup */
 .phone-mockup {
   position: relative;
-  margin-bottom: 30px;
+  margin-top: 24px;
 }
 
 .phone-mockup img {
   width: 100%;
-  max-width: 300px;
-  border-radius: 20px;
+  /* max-width: 300px; */
+  /* border-radius: 20px; */
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
-
+.cta-top-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.cta-top-text p{
+  margin: 0;
+}
+.cta-top-text img{
+  max-width: 24px;
+}
+.cta-top-text .highlight{
+color: #fcc10f;
+}
+.cta-top-text .highlight sup {
+  font-size: 8px;
+  position: relative;
+    top: 1px;
+}
 .quiz-box {
-  position: absolute;
+  /* position: absolute; */
   bottom: 15%;
   left: 50%;
   transform: translateX(-50%);
@@ -137,7 +165,6 @@ body {
 
 .cta-section p {
   font-size: 14px;
-  margin: 0 0 10px;
 }
 
 .download-btn {
@@ -434,9 +461,20 @@ body {
   font-size: 1rem;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 700;
+  font-style: italic;
   transition: background-color 0.3s;
+  box-shadow: 0px 3px 0px #ae2e39;
 }
 
 .download-btn:hover {
-  background-color: #d8343e;
+  background-color: #ff414d;
+}
+.download-btn:focus{
+  background-color: #ff414d;
+}
+.cta-section {
+  margin-top: -107px;
+  position: relative;
+  padding-bottom: 12px;
 }
