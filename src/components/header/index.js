@@ -1,11 +1,13 @@
 import React from "react";
 
+
 const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
         <div className="logo">
-          <img src="/assets/fanizm-logo.png" alt="FANIZM" />
+          <img src="images/logo.png" alt="FANIZM" />
+         
         </div>
 
         <div className="tagline">
