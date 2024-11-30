@@ -4,8 +4,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <img src="/logo.png" alt="Fanizm Logo" className="footer-logo" />
-        <p className="tagline">Watch. Play. Win.</p>
+        <img src="images/logo.png" alt="Fanizm Logo" className="footer-logo" />
       </div>
       <div className="footer-links">
         <div className="footer-column">
@@ -37,37 +36,47 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
       <div className="footer-social">
         <a href="#" className="social-icon">
-          <i className="fab fa-instagram"></i>
+         <img src="images/ins.png" alt="instagram"/>
         </a>
         <a href="#" className="social-icon">
-          <i className="fab fa-facebook"></i>
+        <img src="images/fb.png" alt="instagram"/>
         </a>
         <a href="#" className="social-icon">
-          <i className="fab fa-twitter"></i>
+        <img src="images/twitt.png" alt="instagram"/>
         </a>
         <a href="#" className="social-icon">
-          <i className="fab fa-youtube"></i>
+        <img src="images/you.png" alt="instagram"/>
         </a>
         <a href="#" className="social-icon">
-          <i className="fab fa-linkedin"></i>
+        <img src="images/link.png" alt="instagram"/>
         </a>
       </div>
       <div className="footer-bottom">
         <p>Terms & Conditions</p>
         <p>Privacy Policies</p>
-        <p>&copy; 2024 by Fanizm India Pvt. Ltd.</p>
-        <p className="disclaimer">
+       
+       
+      </div>
+      <p className="para">&copy; 2024 by Fanizm India Pvt. Ltd.</p>
+      <div className="dis-wrap"><h2>Disclaimer</h2>
+      <p className="disclaimer">
           *This game may be habit-forming or financially risky. Play
           responsibly.
         </p>
-      </div>
+        </div>
       <div className="footer-bonus">
-        <p>
-          Get upto <span>₹50 bonus</span> on sign up!!!
-        </p>
-        <button className="download-btn">DOWNLOAD NOW</button>
+      <div className="cta-section">
+          <div className="cta-top-text">
+            <img src="images/coins.png" alt="coins"/>
+          <p>
+            Get upto <span className="highlight"><sup>₹</sup>50 bonus</span> on sign up!!!
+          </p>
+          </div>
+          <button className="download-btn">DOWNLOAD NOW</button>
+        </div>
       </div>
     </footer>
   );

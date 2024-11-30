@@ -55,35 +55,36 @@ const Features = () => {
 
       {/* Features Section */}
       <div className="features-section">
-        <h2>Quizzing is fun with FANIZM</h2>
-        <p className="features-subtitle">
+        <h2><i>Quizzing</i> is fun with <span>FANIZM</span></h2>
+        {/* <p className="features-subtitle">
           SEAMLESS PAYOUT | 24/7 SUPPORT | CELEBRITY MEETUP | CASH REWARDS
-        </p>
+        </p> */}
         <div className="features-grid">
           <div className="feature-item">
-            <FaMoneyBillWave className="feature-icon" />
-            <p>Seamless Payout</p>
+            <img src="images/d.png" alt=""/>
+            <p>Seamless <br/>Payout</p>
           </div>
           <div className="feature-item">
-            <FaHeadset className="feature-icon" />
-            <p>24/7 Support</p>
+          <img src="images/c.png" alt=""/>
+            <p>24/7 <br/>Support</p>
           </div>
           <div className="feature-item">
-            <FaStar className="feature-icon" />
-            <p>Celebrity Meetup</p>
+          <img src="images/a.png" alt=""/>
+            <p>Celebrity <br/>Meetup</p>
           </div>
           <div className="feature-item">
-            <FaRupeeSign className="feature-icon" />
-            <p>Cash Rewards</p>
+          <img src="images/b.png" alt=""/>
+            <p>Cash <br/>Rewards</p>
           </div>
         </div>
+        <a href="#">& MUCH MORE...</a>
       </div>
 
       {/* Languages Section */}
       <div className="languages-section">
-        <h2>Your Language, Our Quizzes</h2>
-        <p>FANIZM supports 6+ Indian languages</p>
-        <div className="languages-list">
+        <h2>Your <i>Language</i>, Our <i>Quizzes</i></h2>
+        <p><i>FANIZM</i> supports 6+ Indian languages</p>
+        {/* <div className="languages-list">
           {[
             "తెలుగు",
             "বাংলা",
@@ -97,7 +98,8 @@ const Features = () => {
               {lang}
             </button>
           ))}
-        </div>
+        </div> */}
+        <img src="images/lang.jpg" alt=""/>
       </div>
     </div>
   );
