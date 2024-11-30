@@ -104,7 +104,14 @@ const Footer = () => {
               on sign up!!!
             </p>
           </div>
-          <button className="download-btn">DOWNLOAD NOW</button>
+          <button
+            className="download-btn"
+            onClick={() => {
+              window.location.href = "https://onelink.to/nc9gz7";
+            }}
+          >
+            DOWNLOAD NOW
+          </button>
         </div>
       </div>
     </footer>

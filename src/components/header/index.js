@@ -1,13 +1,11 @@
 import React from "react";
 
-
 const Header = () => {
   return (
     <header className="header">
       <div className="header-content">
         <div className="logo">
           <img src="images/logo.png" alt="FANIZM" />
-         
         </div>
 
         <div className="tagline">
@@ -15,7 +13,6 @@ const Header = () => {
             UNLOCK MASSIVE <span className="highlight">CASH REWARDS</span>
             GET STARTED TODAY!!!
           </h1>
-       
         </div>
 
         <div className="phone-mockup">
@@ -31,12 +28,23 @@ const Header = () => {
 
         <div className="cta-section">
           <div className="cta-top-text">
-            <img src="images/coins.png" alt="coins"/>
-          <p>
-            Get upto <span className="highlight"><sup>₹</sup>50 bonus</span> on sign up!!!
-          </p>
+            <img src="images/coins.png" alt="coins" />
+            <p>
+              Get upto{" "}
+              <span className="highlight">
+                <sup>₹</sup>50 bonus
+              </span>{" "}
+              on sign up!!!
+            </p>
           </div>
-          <button className="download-btn">DOWNLOAD NOW</button>
+          <button
+            className="download-btn"
+            onClick={() => {
+              window.location.href = "https://onelink.to/nc9gz7";
+            }}
+          >
+            DOWNLOAD NOW
+          </button>
         </div>
       </div>
     </header>
