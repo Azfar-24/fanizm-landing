@@ -186,7 +186,7 @@ body {
 /* feature */
 .features-container {
   font-family: Arial, sans-serif;
-  background-color: #0d1b2a;
+  background-color: #0d1323;
   color: white;
   text-align: center;
   padding: 30px 20px;
@@ -231,16 +231,22 @@ span.star-white img {
 }
 
 .features-section {
-  background: url(../public/images/QuizzingisFunBox@3x.png) no-repeat center
-    center / cover;
+  background: url(../public/images/quiz-bg.png) no-repeat center center / cover;
   padding: 20px;
-  border-radius: 10px;
+  border-radius: 30px;
   margin-bottom: 40px;
+  border: 1px solid #fff;
 }
 
 .features-section h2 {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.features-section h2 span {
+  font-size: 24px;
+  display: block;
+  margin-top: 8px;
+  font-style: italic;
 }
 
 .features-subtitle {
@@ -250,14 +256,23 @@ span.star-white img {
 
 .features-grid {
   display: flex;
-  justify-content: center;
-  gap: 30px;
+  justify-content: space-between;
   flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
 }
 
 .feature-item {
   text-align: center;
-  color: #ff5733;
+  color: #fff;
+  max-width: 25%;
+}
+.feature-item img {
+  width: 50px;
+}
+.features-section a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .feature-icon {
@@ -301,7 +316,7 @@ span.star-white img {
 .testimonials {
   background-color: #0d1326;
   color: #fff;
-  padding: 60px 20px;
+  padding: 1px 20px;
   text-align: center;
 }
 
@@ -310,11 +325,12 @@ span.star-white img {
   font-weight: bold;
   margin-bottom: 10px;
   color: #ffffff;
+  margin-top: 0;
 }
 
 .testimonials h2 span {
   font-style: italic;
-  color: #ffcc00;
+  /* color: #ffcc00; */
 }
 
 .testimonials p {
@@ -332,15 +348,21 @@ span.star-white img {
 }
 
 .review {
-  background-color: #18204f;
-  border: 1px solid #444b71;
+  /* background-color: #18204f;
+  border: 1px solid #444b71; */
   border-radius: 10px;
-  padding: 20px;
+
   text-align: left;
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   color: #fff;
   overflow: hidden;
+  background: url(../public/images/quiz-bg.png) no-repeat center center / cover;
+  padding: 50px 20px 20px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  border: 1px solid #fff;
+  text-align: center;
 }
 
 .review::before {
@@ -351,37 +373,46 @@ span.star-white img {
   top: -20px;
   left: 20px;
   z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  z-index: 0;
+  height: 40px;
 }
 
 .review p {
   font-size: 1rem;
-  font-style: italic;
+  /* font-style: italic; */
   margin: 15px 0;
-  color: #ddd;
+  text-align: center;
+  color: #fff;
 }
 
 .review h4 {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 15px;
-  color: #ffcc00;
+  /* color: #ffcc00; */
+}
+.review h4 span {
+  font-weight: 400;
 }
 
 .review p:last-of-type {
   font-size: 0.9rem;
-  color: #aaa;
+  color: #fff;
 }
 
 /* General Footer Styles */
 .footer {
-  background-color: #0d1326;
+  background-color: #0d1323;
   color: #ffffff;
   text-align: center;
   padding: 40px 20px;
 }
 
 .footer-top {
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 
 .footer-logo {
@@ -397,14 +428,18 @@ span.star-white img {
 }
 
 .footer-links {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 5px;
+  margin-bottom: 30px;
+  @media only screen and (min-width: 600px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
 }
 
 .footer-column h4 {
   font-size: 1rem;
   font-weight: bold;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 
@@ -420,30 +455,44 @@ span.star-white img {
 }
 
 .footer-social {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 18px;
 }
-
-.social-icon img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+.footer-social:before,
+.footer-social:after {
+  content: "";
+  background: url(../public/images/seperator.png) no-repeat center center /
+    contain;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 0;
+  background-size: calc(100% - 10%);
 }
-
-.social-icon img:hover {
-  transform: scale(1.2);
-  opacity: 0.8;
+.footer-social:after {
+  content: "";
+  background: url(../public/images/seperator.png) no-repeat center center /
+    contain;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: initial;
+  bottom: 0;
+  background-size: calc(100% - 10%);
 }
 
 .social-icon {
   display: inline-block;
-  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+  max-width: 40px;
 }
-.footer-separator {
+.social-icon img {
   width: 100%;
-  display: block;
 }
 
 .top-separator {
@@ -455,11 +504,14 @@ span.star-white img {
 }
 
 .footer-bottom {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 30px;
+  background: #0d1323;
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center-align other footer content */
-  text-align: center;
-  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
 .footer-links-row {
@@ -486,27 +538,18 @@ span.star-white img {
 }
 
 .footer-bonus {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.footer-bonus .bonus-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 10px;
-}
-
-.footer-bonus img.bonus-icon {
-  width: 40px;
-  height: auto;
+  background-color: #1c2541;
+  padding: 20px;
+  margin: 0 -20px -35px;
 }
 
 .footer-bonus p {
-  margin: 0;
-  font-size: 16px;
-  color: #ffffff;
+  font-size: 1rem;
+}
+.dis-wrap {
+  text-align: left;
+  padding: 20px 0;
+  color: #a7abb3;
 }
 
 .footer-bonus span {
@@ -564,4 +607,10 @@ span.star-white img {
 .payment-icons img {
   width: 20%;
   object-fit: contain;
+}
+.footer-bonus .cta-section {
+  margin-top: 0;
+}
+.languages-section img {
+  width: 100%;
 }

@@ -26,8 +26,8 @@ const Testimonials = () => {
         {reviews.map((review, index) => (
           <div key={index} className="review">
             <p>{review.text}</p>
-            <h4>{review.name}</h4>
-            <p>{review.location}</p>
+            <h4>{review.name} <span>{review.location}</span></h4>
+          
           </div>
         ))}
       </div>
