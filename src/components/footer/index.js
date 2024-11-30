@@ -13,8 +13,12 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Company</h4>
           <ul>
-            <li>About Us</li>
-            <li>Culture</li>
+            <a href="https://fanizm.com/about-us" className="contact-link">
+              <li>About us</li>
+            </a>
+            <a href="https://fanizm.com/about-us" className="contact-link">
+              <li>Culture</li>
+            </a>
           </ul>
         </div>
         <div className="footer-column">
@@ -34,8 +38,21 @@ const Footer = () => {
         <div className="footer-column">
           <h4>Contact Us</h4>
           <ul>
-            <li>support@fanizm.com</li>
-            <li>Chat with us</li>
+            <li>
+              <a href="mailto:support@fanizm.com" className="contact-link">
+                support@fanizm.com
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/YOUR_PHONE_NUMBER"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-link"
+              >
+                Chat with us
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -58,17 +75,14 @@ const Footer = () => {
         </a>
       </div>
 
-      {/* Bottom Separator Image outside of footer-social */}
-      <img
-        src="/images/Seprator@3x.png"
-        alt="Separator"
-        className="footer-separator bottom-separator"
-      />
-
       {/* Footer Bottom Section */}
       <div className="footer-bottom">
-        <p>Terms & Conditions</p>
-        <p>Privacy Policies</p>
+        <a href="https://fanizm.com/terms-condition" className="footer-link">
+          <p>Terms & Conditions</p>
+        </a>
+        <a href="https://fanizm.com/privacy-policy" className="footer-link">
+          <p>Privacy Policies</p>
+        </a>
       </div>
       <p className="para">&copy; 2024 by Fanizm India Pvt. Ltd.</p>
       <div className="dis-wrap">

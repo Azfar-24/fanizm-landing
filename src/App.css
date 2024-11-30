@@ -614,3 +614,20 @@ span.star-white img {
 .languages-section img {
   width: 100%;
 }
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
