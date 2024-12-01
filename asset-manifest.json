@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/fanizm-landing/static/css/main.5920c6b7.css",
-    "main.js": "/fanizm-landing/static/js/main.96e292c5.js",
+    "main.css": "/fanizm-landing/static/css/main.7372bc3d.css",
+    "main.js": "/fanizm-landing/static/js/main.a02b10e0.js",
     "static/js/453.2982c844.chunk.js": "/fanizm-landing/static/js/453.2982c844.chunk.js",
     "static/media/quiz-bg.png": "/fanizm-landing/static/media/quiz-bg.6ae25c0f43769a4197c1.png",
     "static/media/hero-bg.jpg": "/fanizm-landing/static/media/hero-bg.7c7fffb1ca78a5017fe3.jpg",
     "index.html": "/fanizm-landing/index.html",
-    "main.5920c6b7.css.map": "/fanizm-landing/static/css/main.5920c6b7.css.map",
-    "main.96e292c5.js.map": "/fanizm-landing/static/js/main.96e292c5.js.map",
+    "main.7372bc3d.css.map": "/fanizm-landing/static/css/main.7372bc3d.css.map",
+    "main.a02b10e0.js.map": "/fanizm-landing/static/js/main.a02b10e0.js.map",
     "453.2982c844.chunk.js.map": "/fanizm-landing/static/js/453.2982c844.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5920c6b7.css",
-    "static/js/main.96e292c5.js"
+    "static/css/main.7372bc3d.css",
+    "static/js/main.a02b10e0.js"
   ]
 }
