@@ -11,7 +11,7 @@ const Header = () => {
         <div className="tagline">
           <h1>
             UNLOCK MASSIVE <span className="highlight">CASH REWARDS</span>
-            GET STARTED TODAY!!!
+            GET STARTED TODAY!
           </h1>
         </div>
 
@@ -26,7 +26,7 @@ const Header = () => {
           </div> */}
         </div>
 
-        <div className="cta-section">
+        {/* <div className="cta-section">
           <div className="cta-top-text">
             <img src="images/coins.png" alt="coins" />
             <p>
@@ -45,7 +45,7 @@ const Header = () => {
           >
             DOWNLOAD NOW
           </button>
-        </div>
+        </div> */}
       </div>
     </header>
   );

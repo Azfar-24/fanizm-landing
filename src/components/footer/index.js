@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Footer = () => {
+  const [height, setHeight] = useState();
+  useEffect(() => {
+    setHeight(document.getElementById("myDiv")?.clientHeight);
+  }, [height]);
   return (
     <footer className="footer">
       {/* Footer Top Section with Logo */}
@@ -16,25 +20,25 @@ const Footer = () => {
             <a href="https://fanizm.com/about-us" className="contact-link">
               <li>About us</li>
             </a>
-            <a href="https://fanizm.com/about-us" className="contact-link">
+            {/* <a href="https://fanizm.com/about-us" className="contact-link">
               <li>Culture</li>
-            </a>
+            </a> */}
           </ul>
         </div>
-        <div className="footer-column">
+        {/* <div className="footer-column">
           <h4>Resources</h4>
           <ul>
             <li>Help Centre</li>
             <li>Contact Support</li>
             <li>What's New</li>
           </ul>
-        </div>
-        <div className="footer-column">
+        </div> */}
+        {/* <div className="footer-column">
           <h4>Careers</h4>
           <ul>
             <li>Open Roles</li>
           </ul>
-        </div>
+        </div> */}
         <div className="footer-column">
           <h4>Contact Us</h4>
           <ul>
@@ -45,7 +49,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="https://wa.me/YOUR_PHONE_NUMBER"
+                href="https://bit.ly/Fanizm_Support"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-link"
@@ -58,19 +62,31 @@ const Footer = () => {
       </div>
 
       <div className="footer-social">
-        <a href="#" className="social-icon">
+        <a
+          href="https://www.instagram.com/fanizm.official"
+          className="social-icon"
+        >
           <img src="images/ins.png" alt="instagram" />
         </a>
-        <a href="#" className="social-icon">
+        <a
+          href="https://www.facebook.com/share/8CL57ZXti9sVdpEN"
+          className="social-icon"
+        >
           <img src="images/fb.png" alt="instagram" />
         </a>
-        <a href="#" className="social-icon">
+        <a href="https://x.com/fanizm_official" className="social-icon">
           <img src="images/twitt.png" alt="instagram" />
         </a>
-        <a href="#" className="social-icon">
+        <a
+          href="https://youtube.com/@fanizm.india_official"
+          className="social-icon"
+        >
           <img src="images/you.png" alt="instagram" />
         </a>
-        <a href="#" className="social-icon">
+        <a
+          href="https://www.linkedin.com/company/fanizm-india/"
+          className="social-icon"
+        >
           <img src="images/link.png" alt="instagram" />
         </a>
       </div>
@@ -81,27 +97,24 @@ const Footer = () => {
           <p>Terms & Conditions</p>
         </a>
         <a href="https://fanizm.com/privacy-policy" className="footer-link">
-          <p>Privacy Policies</p>
+          <p>Privacy Policy</p>
         </a>
       </div>
       <p className="para">&copy; 2024 by Fanizm India Pvt. Ltd.</p>
-      <div className="dis-wrap">
+      <div className="dis-wrap" style={{ marginBottom: height }}>
         <h2>Disclaimer</h2>
         <p className="disclaimer">
           *This game may be habit-forming or financially risky. Play
           responsibly.
         </p>
       </div>
-      <div className="footer-bonus">
+      <div className="footer-bonus" id="myDiv">
         <div className="cta-section">
           <div className="cta-top-text">
             <img src="images/coins.png" alt="coins" />
             <p>
-              Get upto{" "}
-              <span className="highlight">
-                <sup>₹</sup>50 bonus
-              </span>{" "}
-              on sign up!!!
+              Get upto <span className="highlight">₹ 50 bonus</span> on signing
+              up!
             </p>
           </div>
           <button

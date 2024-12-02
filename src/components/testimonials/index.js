@@ -16,9 +16,9 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className="testimonials">
-      <h2>
+      <h3>
         Real <span>people</span>, Real <span>money</span>
-      </h2>
+      </h3>
       <p>
         What winners say about <strong>FANIZM</strong>
       </p>
@@ -26,8 +26,9 @@ const Testimonials = () => {
         {reviews.map((review, index) => (
           <div key={index} className="review">
             <p>{review.text}</p>
-            <h4>{review.name} <span>{review.location}</span></h4>
-          
+            <h4>
+              {review.name}, <span>{review.location}</span>
+            </h4>
           </div>
         ))}
       </div>

@@ -68,6 +68,7 @@ body {
   margin: 10px 0;
   letter-spacing: 2px;
   font-weight: 400;
+  color: #ffffff;
 }
 
 .tagline .highlight {
@@ -543,7 +544,7 @@ span.star-white img {
   width: 100%;
   z-index: 1000;
   background-color: #1c2541;
-  padding: 20px;
+  padding: 8px;
   margin: 0;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -588,7 +589,7 @@ span.star-white img {
 .cta-section {
   /* margin-top: -107px; */
   position: relative;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .group-start {
